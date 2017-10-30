@@ -1,6 +1,6 @@
 {
   "name": "jste",
-  "version": "1.0.7-beta",
+  "version": "1.0.7",
   "description": "jste - new modern java sript template engine",
   "main": "index.js",
   "scripts": {
@@ -18,6 +18,5 @@
   "author": "alexstrnik",
   "license": "ISC",
   "dependencies": {
-    "request": "latest"
   }
 }

@@ -53,6 +53,7 @@ JSTE is a fast, modern and usable template engine.
 -  `v1.0.4` added tutorials and examples
 -  `v1.0.5-6` added playground and tutorials. Fixed bugs
 -  `v1.0.7-beta` added connector class. Fixed bugs. Updated playground
+-  `v1.0.7-8` fixed bugs in connector class
 ## Issues
 - Find a bug?
 - Write me on [GitHub](https://github.com/AlexStrNik/JSTE/issues)
