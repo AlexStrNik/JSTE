@@ -15,5 +15,8 @@
     "url": "https://github.com/AlexStrNik/JSTE/issues"
   },
   "author": "alexstrnik",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "jquery": "^3.2.1"
+  }
 }

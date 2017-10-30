@@ -29,7 +29,7 @@ JSTE is a fast, modern and usable template engine.
     hello 3 element antipod is 97
     ```
 ## Try it here
-- [JSTE Playground](https://github.com/AlexStrNik/JSTE/blob/master/jste/playground/JSTE_Playground.html)
+- [JSTE Playground](https://alexstrnik.github.io/JSTE/jste/playground)
 ## Documentation
   - `<?=` and `?>` used for inline javascript in html blocks
   - `<?js` and `?>` used for main javasript code
@@ -40,7 +40,7 @@ JSTE is a fast, modern and usable template engine.
 -  [Get started](https://github.com/AlexStrNik/JSTE/blob/master/jste/examples/First.md)
 -  [Passing variables](https://github.com/AlexStrNik/JSTE/blob/master/jste/examples/PassVar1.md)
 -  [Passing server variables to page script](https://github.com/AlexStrNik/JSTE/blob/master/jste/examples/PassVar2.md)
-- [Create Mixins](https://github.com/AlexStrNik/JSTE/blob/master/jste/examples/Mixin.md)
+-  [Create Mixins](https://github.com/AlexStrNik/JSTE/blob/master/jste/examples/Mixin.md)
 
 ## Dependecies
   - Nothing here :)
@@ -52,6 +52,7 @@ JSTE is a fast, modern and usable template engine.
 -  `v1.0.3` updated Readme
 -  `v1.0.4` added tutorials and examples
 -  `v1.0.5-6` added playground and tutorials. Fixed bugs
+
 
 ## Issues
 - Find a bug?
