@@ -15,3 +15,9 @@
     <p><strong><span id='text'><?= 'Hello'+' '+'JSTE!'?></span></strong></p>
     ```
 - Run `app.js` and see result in your browser
+
+# See also:
+- #### [Setup Express app](https://github.com/AlexStrNik/JSTE/blob/master/jste/examples/GetStarted.md)
+- #### [Get started](https://github.com/AlexStrNik/JSTE/blob/master/jste/examples/First.md)
+- #### [Passing variables](https://github.com/AlexStrNik/JSTE/blob/master/jste/examples/PassVar1.md)
+- #### [Passing server variables to page script](https://github.com/AlexStrNik/JSTE/blob/master/jste/examples/PassVar2.md)
