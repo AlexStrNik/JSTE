@@ -1,6 +1,6 @@
 {
   "name": "jste",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "jste - new modern java sript template engine",
   "main": "index.js",
   "scripts": {
@@ -11,7 +11,7 @@
     "template",
     "js"
   ],
-  "bugs":{
+  "bugs": {
     "url": "https://github.com/AlexStrNik/JSTE/issues"
   },
   "author": "alexstrnik",

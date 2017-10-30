@@ -30,6 +30,8 @@
     <p>hello Express </p>
     
     <p>hello Express </p>
+    
+    <p>hello Express </p>
     ```
 
 # See also:
@@ -37,3 +39,4 @@
 - #### [Get started](https://github.com/AlexStrNik/JSTE/blob/master/jste/examples/First.md)
 - #### [Passing variables](https://github.com/AlexStrNik/JSTE/blob/master/jste/examples/PassVar1.md)
 - #### [Passing server variables to page script](https://github.com/AlexStrNik/JSTE/blob/master/jste/examples/PassVar2.md)
+- #### [Create Mixins](https://github.com/AlexStrNik/JSTE/blob/master/jste/examples/Mixin.md)
