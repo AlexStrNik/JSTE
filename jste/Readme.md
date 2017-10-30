@@ -36,12 +36,12 @@ JSTE is a fast, modern and usable template engine.
   - Like in php this script run once when page is loading
 
 ## Tutorials & Examples
-- #### [Setup Express app](https://github.com/AlexStrNik/JSTE/blob/master/jste/examples/GetStarted.md)
-- #### [Get started](https://github.com/AlexStrNik/JSTE/blob/master/jste/examples/First.md)
-- #### [Passing variables](https://github.com/AlexStrNik/JSTE/blob/master/jste/examples/PassVar1.md)
-- #### [Passing server variables to page script](https://github.com/AlexStrNik/JSTE/blob/master/jste/examples/PassVar2.md)
-- #### [Create Mixins](https://github.com/AlexStrNik/JSTE/blob/master/jste/examples/Mixin.md)
-- #### [Catch events](https://github.com/AlexStrNik/JSTE/blob/master/jste/examples/Events1.md)
+-  [Setup Express app](https://github.com/AlexStrNik/JSTE/blob/master/jste/examples/GetStarted.md)
+-  [Get started](https://github.com/AlexStrNik/JSTE/blob/master/jste/examples/First.md)
+-  [Passing variables](https://github.com/AlexStrNik/JSTE/blob/master/jste/examples/PassVar1.md)
+-  [Passing server variables to page script](https://github.com/AlexStrNik/JSTE/blob/master/jste/examples/PassVar2.md)
+-  [Create mixins](https://github.com/AlexStrNik/JSTE/blob/master/jste/examples/Mixin.md)
+-  [Catch events](https://github.com/AlexStrNik/JSTE/blob/master/jste/examples/Events1.md)
 
 ## Dependecies
   - Only `fs` used for reading templates
