@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JSTE Playground</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            height: 100%;
+            padding: 0;
+        }
+        html {
+            height: 100%;
+        }
+
+        /* Create two equal columns that floats next to each other */
+        .column {
+           /* position: absolute;*/
+            float: left;
+            width: 50%;
+            height: 100%;
+            padding: 10px; /* Should be removed. Only for demonstration */
+        }
+
+        /* Clear floats after the columns */
+        .row{
+            height:100%;
+        }
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+        @media (max-width: 600px) {
+            .column {
+                width: 100%;
+                margin: 0;
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="./codemirror/doc/docs.css">
+    <link rel="stylesheet" href="./codemirror/lib/codemirror.css">
+    <link rel="stylesheet" href="./codemirror/theme/hopscotch.css">
+    <script src="./codemirror/lib/codemirror.js"></script>
+    <script src="codemirror/addon/selection/active-line.js"></script>
+    <script src="./codemirror/mode/xml/xml.js"></script>
+    <script src="./codemirror/mode/javascript/javascript.js"></script>
+    <script src="./codemirror/mode/css/css.js"></script>
+    <script src="./codemirror/mode/clike/clike.js"></script>
+    <script src="./codemirror/mode/htmlmixed/htmlmixed.js"></script>
+    <script src="./codemirror/mode/php.js"></script>
+    <script src="./parser.web.js"></script>
+    <style>
+        .CodeMirror { height: 100%; }
+        .style-2::-webkit-scrollbar-track
+        {
+            -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+            border-radius: 10px;
+            background-color: transparent;
+        }
+
+        .style-2::-webkit-scrollbar
+        {
+            width: 12px;
+            background-color: transparent;
+        }
+
+        .style-2::-webkit-scrollbar-thumb
+        {
+            border-radius: 10px;
+            -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+            background-color: #302020;
+        }
+    </style>
+</head>
+<body>
+<div class="row">
+    <div class="column" style="background-color:#302020; padding-top: 0;padding-left: 0;padding-bottom: 0;">
+        <div id="editor" style="height: 100%;">
+
+        </div>
+    </div>
+    <div class="column" style="background-color:#322931; color: #aaa">
+        <div class="style-2" id="html" style="height: 100%;overflow-y: scroll;">
+
+        </div>
+    </div>
+    <button id="run" style="float: left; position: fixed; color: #aaaaaa;width: 70px;height: 35px;bottom: 30px; border: none; right: 30px;z-index: 50; background-color: #302020">Run</button>
+    <script>
+        var editor = CodeMirror(document.getElementById('editor'), {
+            value: "<?js\n" +
+            "for(let i = 0;i<=3;i+=1){\n" +
+            "?> \n" +
+            "<p>hello <?= i  ?> element </p>\n" +
+            "<?js\n" +
+            "}\n" +
+            "?> ",
+            mode:  "application/x-httpd-php",
+            styleActiveLine: true,
+            matchBrackets: true,
+            lineNumbers: true,
+            theme: "hopscotch"
+        });
+        document.getElementById('run').onclick=function (e) {
+            'use strict';
+            var ht = document.getElementById('html');
+            var content = '';
+            var dds = {write:function (txt) {
+                content+=txt;
+            }};
+            parse(editor.getValue(),dds)();
+            ht.innerHTML=content;
+        }
+    </script>
+</div>
+</body>
+</html>
