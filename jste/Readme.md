@@ -54,5 +54,10 @@ JSTE is a fast, modern and usable template engine.
 - Find a bug?
 - Write me on [GitHub](https://github.com/AlexStrNik/JSTE/issues)
 
+## TODO:
+- Connection class between page script, template engine, and express app
+- Add playground
+- Add suntax plugins for InteliJ and Atom
+
 # We hope that you will like it. 
 ### Created by  [@AlexStrNik](https://telegram.me/alexstrnik)
