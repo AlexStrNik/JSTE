@@ -1,24 +1,21 @@
 'use strict';
 let $q = 'NULL';
 try{
-   $q = require('jquery');
+   $q = require('fs');
 }
 catch (e){
-
+    console.log(e);
 }
 if($q==='NULL'){
     let script = document.createElement('script');
     script.type = 'text/javascript';
-    script.src = './web/jquery.js';
+    script.src = 'https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js';
     document.head.appendChild(script);
-}
-else{
-    let $ = $q;
 }
 let $JSTEC = {};
 
 function $on(event,func) {
-    this.router.post('/'+event,function(req,res,next){
+    this.router.post('/'+event+'_$_$_$',function(req,res,next){
         let params = req.params || {};
         let body = req.body || {};
         let query = req.query || {};
@@ -27,7 +24,7 @@ function $on(event,func) {
 }
 
 function $call(event, args) {
-    $.post('/'+event,args);
+    $.post('/'+event+'_$_$_$',args);
 }
 
 $JSTEC.on=$on;

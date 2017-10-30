@@ -1,38 +1,37 @@
-# JSTE. How to pass variables from server to page?
-
+# JSTE. How to catch events in router from page using JSTE?
 - Create `main.js` router
     ```js
     let express = require('express');
     let router = express.Router();
+    $JSTEC = require('./jste/connector').$setup(router); //setup handler for router
     
-    /* GET home page. */
+    router.use(express.json());
+    router.use(express.urlencoded({ extended: false }));
+    
+    $JSTEC.on('hello',function e(args) {//add event handler
+        console.log('hello '+args['name']);
+    });
+    
     router.get('/', function(req, res, next) {
-        res.render('main', { title: 'JSTE' }); //pass variables to options
+        res.render('main'); //pass variables to options
     });
     
     module.exports = router;
     ```
-- In this example we want to pass title name to main page.
-- Now create the `main.jste`
+- Create `main.jste`
     ```php
-    <?js
-    for(let i = 0;i<=3;i+=1){
-    ?>
-    <p>hello <?= title ?> </p>
-    <?js
+    <button id = "run">Run</button>
+    <input id = "name" type="text"/>
+    <script src = "../jste/connector.js"></script>
+    <script>
+    document.getElementById('run').onclick = function (e) {
+        'use strict';
+        $JSTEC.call('main/hello',{'name':document.getElementById('name').value});
+        //call event with named arguments
     }
-    ?>
+    </script>
     ```
-- And the result `main.html`
-    ```html
-    <p>hello Express </p>
-    
-    <p>hello Express </p>
-    
-    <p>hello Express </p>
-    
-    <p>hello Express </p>
-    ```
+- JSTE lib already contains `jquery.min.js` for web 
 
 # See also:
 - #### [Setup Express app](https://github.com/AlexStrNik/JSTE/blob/master/jste/examples/GetStarted.md)

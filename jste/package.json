@@ -1,6 +1,6 @@
 {
   "name": "jste",
-  "version": "1.0.6",
+  "version": "1.0.7-beta",
   "description": "jste - new modern java sript template engine",
   "main": "index.js",
   "scripts": {
@@ -9,7 +9,8 @@
   "keywords": [
     "jste",
     "template",
-    "js"
+    "js",
+    "template engine"
   ],
   "bugs": {
     "url": "https://github.com/AlexStrNik/JSTE/issues"
@@ -17,6 +18,6 @@
   "author": "alexstrnik",
   "license": "ISC",
   "dependencies": {
-    "jquery": "^3.2.1"
+    "request": "latest"
   }
 }

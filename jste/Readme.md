@@ -36,14 +36,14 @@ JSTE is a fast, modern and usable template engine.
   - Like in php this script run once when page is loading
 
 ## Tutorials & Examples
--  [Setup Express app](https://github.com/AlexStrNik/JSTE/blob/master/jste/examples/GetStarted.md)
--  [Get started](https://github.com/AlexStrNik/JSTE/blob/master/jste/examples/First.md)
--  [Passing variables](https://github.com/AlexStrNik/JSTE/blob/master/jste/examples/PassVar1.md)
--  [Passing server variables to page script](https://github.com/AlexStrNik/JSTE/blob/master/jste/examples/PassVar2.md)
--  [Create Mixins](https://github.com/AlexStrNik/JSTE/blob/master/jste/examples/Mixin.md)
+- #### [Setup Express app](https://github.com/AlexStrNik/JSTE/blob/master/jste/examples/GetStarted.md)
+- #### [Get started](https://github.com/AlexStrNik/JSTE/blob/master/jste/examples/First.md)
+- #### [Passing variables](https://github.com/AlexStrNik/JSTE/blob/master/jste/examples/PassVar1.md)
+- #### [Passing server variables to page script](https://github.com/AlexStrNik/JSTE/blob/master/jste/examples/PassVar2.md)
+- #### [Create Mixins](https://github.com/AlexStrNik/JSTE/blob/master/jste/examples/Mixin.md)
+- #### [Catch events](https://github.com/AlexStrNik/JSTE/blob/master/jste/examples/Events1.md)
 
 ## Dependecies
-  - Nothing here :)
   - Only `fs` used for reading templates
 
 ## Changelog
@@ -52,14 +52,13 @@ JSTE is a fast, modern and usable template engine.
 -  `v1.0.3` updated Readme
 -  `v1.0.4` added tutorials and examples
 -  `v1.0.5-6` added playground and tutorials. Fixed bugs
-
-
+-  `v1.0.7-beta` added connector class. Fixed bugs. Updated playground
 ## Issues
 - Find a bug?
 - Write me on [GitHub](https://github.com/AlexStrNik/JSTE/issues)
 
 ## TODO:
-- Connection class between page script, template engine, and express app
+- ~~Connection class between page script, template engine, and express app~~
 - ~~Add playground~~
 - Add suntax plugins for InteliJ and Atom
 
