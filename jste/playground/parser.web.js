@@ -50,8 +50,3 @@ function parse(text,document) {
         eval(fcode);
     }
 }
-
-//dcl = '';
-//doc = {write:(text)=>{dcl+=text;}};
-//parse(read('./main.jsi'),doc)();
-//fs.writeFileSync('main.html',dcl)
