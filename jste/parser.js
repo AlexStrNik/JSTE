@@ -33,9 +33,16 @@ function parse(text,document) {
             document.write(txt);
     }};
     let codes = text.match(jsAll);
-    let noncode = text.replace(jsAll,'$%&').split('$%&').filter(function(i){return i});
+    let noncode = text.replace(jsAll,'$%&');
     let fcode = '';
     let $_$_$_fcs_$_$_$ = {};
+
+    let prevdata = noncode.shift();
+    let qrt = evalute(prevdata);
+    fcode+="$_$_$_fcs_$_$_$['$_$_$_code"+"prev"+"_$_$_$'](["+qrt[1].join(',')+"]);\n";
+    $_$_$_fcs_$_$_$["$_$_$_code"+"prev"+"_$_$_$"]=function(txt,arn){return function(args){documen.write(txt,arn,args)}};
+    $_$_$_fcs_$_$_$["$_$_$_code"+"prev"+"_$_$_$"]=$_$_$_fcs_$_$_$["$_$_$_code"+"prev"+"_$_$_$"](qrt[0],qrt[2]);
+
     for(c in codes){
         fcode+=codes[c].replace('<?js','').replace('?>','');
         if(c < codes.length-1){

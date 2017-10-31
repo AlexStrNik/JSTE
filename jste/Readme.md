@@ -54,6 +54,7 @@ JSTE is a fast, modern and usable template engine.
 -  `v1.0.5-6` added playground and tutorials. Fixed bugs
 -  `v1.0.7-beta` added connector class. Fixed bugs. Updated playground
 -  `v1.0.7-8` fixed bugs in connector class
+-  `v1.0.9` fixed bugs in parser
 ## Issues
 - Find a bug?
 - Write me on [GitHub](https://github.com/AlexStrNik/JSTE/issues)
@@ -61,7 +62,7 @@ JSTE is a fast, modern and usable template engine.
 ## TODO:
 - ~~Connection class between page script, template engine, and express app~~
 - ~~Add playground~~
-- Add suntax plugins for InteliJ and Atom
+- Add suntax plugins for InteliJ, VSCode and Atom
 
 # We hope that you will like it. 
 ### Created by  [@AlexStrNik](https://telegram.me/alexstrnik)
