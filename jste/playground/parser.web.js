@@ -54,7 +54,4 @@ function parse(text,document) {
 //dcl = '';
 //doc = {write:(text)=>{dcl+=text;}};
 //parse(read('./main.jsi'),doc)();
-//fs.writeFileSync('main.html',dcl);
-
-module.exports.read=read;
-module.exports.parse=parse;
+//fs.writeFileSync('main.html',dcl)
